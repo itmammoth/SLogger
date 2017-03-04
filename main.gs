@@ -1,10 +1,10 @@
 /**
  * Creates a SLogger instance bound with the given sheet.
  *
- * @param {Sheet} the sheet that the logger outputs into
+ * @param {Sheet} sheet the sheet that the logger outputs into
  * @return {SLogger} the instance of SLogger
  */
-var create = function(sheet) {
+function create(sheet) {
   return {
     debug: function(message) {
       out_(sheet, 'debug', message);
