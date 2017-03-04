@@ -1,3 +1,9 @@
+/**
+ * Creates a SLogger instance bound with the given sheet.
+ *
+ * @param {Sheet} the sheet that the logger outputs into
+ * @return {SLogger} the instance of SLogger
+ */
 var create = function(sheet) {
   return {
     debug: function(message) {
